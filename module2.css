@@ -1,0 +1,62 @@
+body {
+  margin: 2px;
+  padding: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.section-container {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  position: relative;
+}
+section {
+  background-color: rgb(232, 140, 140);
+  font-size: 1.25em; /* 25% larger than paragraph text */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  border: 1px solid black;
+}
+p {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  /* clear: ; */
+}
+.food {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .section-container {
+    width: 30%; /* Equal width for desktop view */
+    margin: 0 10px 10px 0; /* Spacing between sections */
+  }
+  .section-container,
+  p {
+    background-color: rgb(135, 227, 247);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-container {
+    width: 48%; /* Two sections in a row for tablet view */
+  }
+  .section-container,
+  p {
+    background-color: rgb(105, 226, 186);
+  }
+}
+@media (max-width: 767px) {
+  .section-container {
+    width: 100%; /* Full width for mobile view */
+  }
+  .section-container,
+  p {
+    background-color: rgb(146, 80, 118);
+  }
+}
